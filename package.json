@@ -1,0 +1,86 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:check": "eslint . --ext ts --ext tsx --ext js",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --fix && stylelint '**/*.css' --fix",
+    "prettier": "prettier --check \"(*.tsx|*.ts|*.css|*.scss)\"",
+    "prettier:fix": "prettier --write \"(*.tsx|*.ts|*.css|*.scss)\"",
+    "prepare": "husky",
+    "postinstall": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@radix-ui/react-select": "^2.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "20.14.9",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "axios": "^1.7.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.12",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.4",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.437.0",
+    "next": "14.2.4",
+    "next-intl": "^3.17.2",
+    "next-themes": "^0.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "swr": "^2.2.5",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "5.5.3",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.2.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/js-cookie": "^3",
+    "@types/lodash": "^4",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/typescript-estree": "^8.0.0",
+    "autoprefixer": "^10.4.20",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "commitlint": "^19.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.7",
+    "nextjs-toploader": "^1.6.12",
+    "postcss": "^8.4.42",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.10"
+  },
+  "packageManager": "yarn@4.1.1",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  }
+}

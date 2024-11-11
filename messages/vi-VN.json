@@ -1,0 +1,39 @@
+{
+  "site": {
+    "title": "Dealtoday",
+    "desc": "Đây là một mô tả mẫu cho trang web Dealtoday."
+  },
+  "localeSwitcher": {
+    "viLocale": "Tiếng Việt",
+    "enLocale": "Tiếng Anh"
+  },
+  "admin": {
+    "siderMenu": {
+      "dashboard": "Bảng điều khiển",
+      "users": "Quản lý người dùng"
+    },
+    "users": {
+      "title": "Quản lý người dùng",
+      "search": "Tìm kiếm",
+      "export": "Xuất",
+      "id": "ID",
+      "name": "Tên",
+      "kanaName": "Tên Kana",
+      "company": "Công ty",
+      "email": "Email",
+      "gender": "Giới tính",
+      "genders": {
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác"
+      },
+      "birthday": "Ngày sinh",
+      "country": "Quốc gia",
+      "shippingAddress": "Địa chỉ giao hàng",
+      "magazineSubscription": "Đăng ký tạp chí",
+      "purchaseHistory": "Lịch sử mua hàng",
+      "yes": "Có",
+      "no": "Không"
+    }
+  }
+}
